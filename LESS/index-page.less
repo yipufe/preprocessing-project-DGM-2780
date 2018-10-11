@@ -1,0 +1,274 @@
+.action-bike {
+  background-image: url('../img/action-bicycling-bike-287398-2.jpg');
+  .block {
+    padding: 130px @block-side-padding 150px;
+    color: #fff;
+    max-height: 515px;
+    display: flex;
+    .box-s6 {
+      width: 50%;
+      .info-box-container {
+        display: flex;
+        .info-box {
+          padding: 12px;
+          background-color: rgba(37,22,1,0.6);
+          width: 26%;
+          margin-right: 3px;
+          h2 {
+            font-size: 1.6rem;
+            font-weight: bold;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 18px;
+          }
+          ul {
+            li {
+              border-top: 1px solid rgba(256,256,256,0.2);
+              font-size: 1.6rem;
+              padding: 8px 0px;
+            }
+          }
+          @media @max-xs {
+            display: none;
+          }
+        }
+      }
+    }
+    .shrink-box {
+      width: 506px;
+    }
+    @media @max-lg {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .box-s6 {
+        .shrink-box {
+          width: 306px;
+        }
+      }
+    }
+    @media @max-sm {
+      flex-direction: column;
+      .box-s6 {
+        width: 100%;
+        .shrink-box {
+          width: 100%;
+        }
+      }
+    }
+  }
+  hr {
+    border: none;
+    background-color: #999;
+    border-top: 1px solid #999;
+    height: 0.5px;
+  }
+  h1 {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 9px 0px 17px;
+    font-size: 1.9rem;
+    line-height: 22px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: #ccc;
+    }
+  }
+  a#learn-more-link {
+    text-transform: uppercase;
+  }
+  @media @min-lg {
+    background-size: 100%;
+  }
+}
+
+
+.promotional-boxes {
+  background-color: #eee;
+  .block {
+    display: flex;
+    padding: 85px @block-side-padding;
+    .promo-box:first-of-type {
+      margin-left: 0px;
+    }
+    .promo-box:last-of-type {
+      margin-right: 0px;
+    }
+    .promo-box {
+      margin: 0px 12px;
+      background-color: #fff;
+      width: 25%;
+      img {
+        width: 100%;
+      }
+      .promo {
+        padding: @promo-padding;
+        h1 {
+          font-size: 2.0rem;
+          font-weight: bold;
+        }
+        p {
+          margin: 10px 0px 15px;
+          font-size: 1.4rem;
+          height: 55px;
+          @media @max-sm {
+            height: 90px;
+          }
+        }
+        ul {
+          li{
+            font-size: 2.0rem;
+            border-bottom: @standard-border;
+            padding: 10px 0px;
+            a {
+              text-decoration: none;
+              color: #555;
+              &:hover {
+                color: #333;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        ul {
+          li:last-of-type {
+            border: none;
+          }
+        }
+        .promo-price {
+          font-size: 2.5rem;
+          padding: 10px 0px;
+        }
+      }
+      .promo2 {
+        padding: @promo-padding;
+        h1 {
+          font-size: 3.0rem;
+          font-weight: bold;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
+      @media @max-md {
+        width: 33.33%;
+        &:last-of-type {
+          display: none;
+        }
+      }
+    }
+    @media @max-xs {
+      flex-direction: column;
+      .promo-box {
+        width: 100%;
+        margin: 16px 0px;
+        .promo {
+          p {
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.bike-repair {
+  background-image: url('../img/bicycle-bike-repair-132682-2.jpg');
+  .block {
+    padding: 110px @block-side-padding 100px;
+    display: flex;
+    color: #fff;
+    .box-sv {
+      width: 350px;
+    }
+    p.repair-none {
+      font-size: 1.6rem;
+      margin: 12px 0px;
+    }
+    h1 {
+      font-size: 3.0rem;
+      color: #c33;
+      margin: 12px 0px;
+    }
+    p {
+      font-size: 1.9rem;
+      margin: 12px 0px;
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+          color: #dddddd;
+        }
+      }
+    }
+  }
+  @media @min-xl {
+    background-size: 100%;
+  }
+}
+
+
+.some-stuff {
+  background-image: url('../img/bicycle-bike-blue-1149601.jpg');
+  .block {
+    padding: 77px @block-side-padding 135px;
+    display: flex;
+    .box-s7 { width: 58.33%; }
+    .box-s5 {
+      margin-left: 25px;
+      width: 41.67%;
+    }
+    .box-s5, .box-s7 {
+      padding-top: 34px;
+      border-top: 1px dashed #333;
+    }
+    h1 {
+      font-size: 3.0rem;
+      margin-bottom: 14px;
+    }
+    p {
+      font-size: 1.9rem;
+      margin: 14px 0px;
+      line-height: 25px;
+      a {
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+          color: #555;
+        }
+      }
+    }
+    ul li {
+      padding: 7px 0px;
+      text-transform: uppercase;
+      a {
+        font-size: 1.6rem;
+        color: #333;
+        text-decoration: none;
+        &:hover {
+          color: #777;
+        }
+      }
+    }
+    @media @max-sm {
+      flex-direction: column;
+      .box-s7, .box-s5 {
+        width: 100%;
+        margin-left: 0px;
+      }
+    }
+  }
+  @media @min-lg {
+    background-size: 100%;
+  }
+}

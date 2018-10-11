@@ -1,0 +1,36 @@
+@import "reset";
+
+@import "variables";
+
+@import "mixins";
+
+//To be applied globaly for consistancy in layout
+.container {
+	width: 100%;
+	.flex-hori-center;
+	.block {
+		width: @lg-block-size;
+		padding: 0px @block-side-padding;
+	}
+}
+
+//Structured LESS
+html {
+	//For rem to work as tenth of pixel value
+	font-size: 62.5%;
+	body {
+		font-family: @primary-font;
+		@import "header";
+
+
+		section.main {
+
+			@import "index-page";
+			@import "secondary-page";
+
+			@import "quicklinks";
+
+		}
+		@import "footer";
+	}
+}

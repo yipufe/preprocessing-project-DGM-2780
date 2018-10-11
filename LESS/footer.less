@@ -1,0 +1,36 @@
+footer {
+  .legal-links {
+    border-top: 1px solid #fff;
+    color: #777;
+    font-size: 1.2rem;
+    background-color: @footer-color;
+    padding: 30px 0px;
+    ul {
+      display: flex;
+      li {
+        padding: 0px 5px;
+        border-left: 1px solid #777;
+        font-size: 1.2rem;
+        &:first-of-type {
+          padding-left: 0px;
+          border: none;
+        }
+        a {
+          color: #777;
+          font-size: 1.2rem;
+          text-decoration: none;
+          &:hover {
+            color: #555;
+          }
+        }
+      }
+      @media @max-xs {
+        flex-direction: column;
+        li {
+          border: none;
+          padding: 2px 0px;
+        }
+      }
+    }
+  }
+}

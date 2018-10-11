@@ -1,0 +1,392 @@
+.finder-form {
+  .block {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    h1 {
+      font-size: 3.4rem;
+      margin: 10px 0px;
+    }
+    p {
+      font-size: 1.4rem;
+      margin: 15px 0px;
+    }
+    h2 {
+      font-size: 2.1rem;
+      margin: 30px 0px 10px;
+    }
+    form {
+      .flex-vert-center;
+      .vert-line {
+        display: inline-block;
+        width: 1px;
+        border-right: @standard-border;
+        height: 32px;
+        margin-right: @form-spacing + 1px;
+      }
+      input {
+        padding: 0px 8px;
+        font-size: @form-text-size;
+        height: 28px;
+        margin-right: @form-spacing;
+        width: 400px;
+        @media @max-xs {
+          width: 300px;
+        }
+      }
+      select {
+        padding: 0px 8px;
+        margin-right: @form-spacing;
+        font-size: @form-text-size;
+        height: 32px;
+        width: 200px;
+        color: @form-text-color;
+      }
+      .option-buttons {
+        .flex-vert-center;
+        button {
+          margin-right: @form-spacing;
+          height: 32px;
+          border: @standard-border;
+          background-color: #fff;
+          color: @form-text-color;
+        }
+        a {
+          margin-right: @form-spacing;
+          display: inline-block;
+          font-size: @form-text-size;
+          text-decoration: none;
+          color: @form-text-color;
+        }
+      }
+      @media @max-md {
+        flex-direction: column;
+        align-items: flex-start;
+        .vert-line {
+          display: none;
+        }
+        input, select {
+          margin-bottom: @form-spacing;
+        }
+        .option-buttons {
+          .vert-line {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.feature-zone {
+  .block {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    .underline;
+    h1 {
+      font-size: 1.9rem;
+      margin: 25px 0px;
+    }
+    .feature {
+      border: @standard-border;
+      .hover-shadow;
+      display: flex;
+      color: #444;
+      .img {
+        width: 33%;
+        background-image: url("../img/adventure-beach-bicycle-462036.jpg");
+        @media @max-md {
+          display: none;
+        }
+      }
+      .feature-center {
+        width: 40%;
+        border-right: @standard-border;
+        margin: 80px 0px 20px 20px;
+        padding-right: 20px;
+        p {
+          font-size: 1.4rem;
+          margin-bottom: 20px;
+          line-height: 19px;
+        }
+        h3 {
+          font-size: 1.4rem;
+          font-weight: bold;
+          margin: 20px 0px 10px;
+        }
+        .includes {
+          display: flex;
+          font-size: 1.4rem;
+          .includes-left {
+            width: 50%;
+            ul {
+              li {
+                line-height: 19px;
+              }
+            }
+            a {
+              display: block;
+              margin-top: 20px;
+              text-decoration: none;
+              color: #444;
+              font-weight: bold;
+              &:hover {
+                color: #222;
+              }
+            }
+          }
+          .includes-right {
+            width: 50%;
+            ul {
+              li {
+                line-height: 19px;
+              }
+            }
+          }
+        }
+        @media @max-md {
+          width: 70%;
+        }
+        @media @max-xs {
+          width: 90%;
+          border: none;
+        }
+      }
+      .feature-right {
+        margin: 80px 20px 20px;
+        width: 27%;
+        .price {
+          margin: 20px 0px 30px;
+          font-size: 2.6rem;
+        }
+
+        .btn-gray {
+          .square-button(#777, #444);
+        }
+        .btn-blue {
+          .square-button(#0696d7, #0582ba);
+        }
+        @media @max-xs {
+          margin: 20px;
+        }
+      }
+      @media @max-xs {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+
+.best-selling {
+  .block {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    .underline;
+    h1 {
+      font-size: 1.9rem;
+      margin: 0px 0px 25px;
+    }
+    .sale-items-container {
+      display: flex;
+      flex-wrap: wrap;
+      .sale-item {
+        width: 32%;
+        margin: 0px 10px 14px 0px;
+        border: @standard-border;
+        .hover-shadow;
+        img {
+          width: 100%;
+        }
+        h2 {
+          font-size: 1.9rem;
+          font-weight: bold;
+          margin: 30px 20px;
+        }
+        p {
+          margin: 30px 20px 20px;
+          font-size: 1.4rem;
+          line-height: 20px;
+        }
+        a {
+          text-decoration: none;
+          color: #444;
+          .more-info-select {
+            border-top: @standard-border;
+            p {
+              margin: 0px 20px;
+              padding: 10px 0px;
+              text-transform: uppercase;
+              span {
+                font-size: 2.6rem;
+                padding-right: 10px;
+                line-height: 6px;
+              }
+            }
+          }
+          &:hover {
+            .more-info-select {
+              background-color: #f5f5f5;
+            }
+          }
+        }
+        @media @max-md {
+          width: 31%;
+        }
+        @media @max-sm {
+          width: 47.5%;
+        }
+        @media @max-xs {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.more-products {
+  .block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h1 {
+      font-size: 1.9rem;
+      margin: 0px 0px 25px;
+    }
+    .sale-items-container {
+      display: flex;
+      flex-wrap: wrap;
+      .sale-item {
+        width: 32%;
+        margin: 0px 10px 14px 0px;
+        border: @standard-border;
+        .hover-shadow;
+        h2 {
+          font-size: 1.9rem;
+          font-weight: bold;
+          margin: 30px 20px;
+        }
+        a {
+          text-decoration: none;
+          color: #444;
+          .more-info-select {
+            border-top: @standard-border;
+            p {
+              margin: 0px 20px;
+              padding: 10px 0px;
+              font-size: 1.4rem;
+              line-height: 20px;
+              text-transform: uppercase;
+              span {
+                font-size: 2.6rem;
+                padding-right: 10px;
+                line-height: 6px;
+              }
+            }
+          }
+          &:hover {
+            .more-info-select {
+              background-color: #f5f5f5;
+            }
+          }
+        }
+        @media @max-md {
+          width: 31%;
+        }
+        @media @max-sm {
+          width: 47.5%;
+        }
+        @media @max-xs {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+.product-list {
+  padding-bottom: 60px;
+  .block {
+    padding-top: 110px;
+    padding-bottom: 20px;
+    .underline;
+    h1 {
+      font-size: 3.4rem;
+      margin: 10px 0px 40px;
+    }
+    .product-col-container {
+      display: flex;
+      .product-col {
+        width: 25%;
+        margin-right: 20px;
+        font-size: 1.4rem;
+        ul {
+          li {
+            padding: 10px 0px;
+            border-bottom: @standard-border;
+            a {
+              text-decoration: none;
+              color: #555;
+              &:hover {
+                color: #333;
+              }
+            }
+            &:last-of-type {
+              border: none;
+            }
+          }
+        }
+        @media @max-sm {
+          width: 46%;
+        }
+        @media @max-xs {
+          width: 100%;
+          margin: 0px;
+        }
+      }
+      @media @max-sm {
+        flex-wrap: wrap;
+        .product-col:nth-of-type(2n+1) {
+          ul {
+            li:last-of-type {
+              border-bottom: @standard-border;
+            }
+          }
+        }
+        .prod-col-2 {
+          order: 3;
+        }
+        .prod-col-3 {
+          order: 2;
+        }
+        .prod-col-4 {
+          order: 4;
+        }
+      }
+      @media @max-xs {
+        flex-direction: column;
+        .product-col {
+          ul {
+            li:last-of-type {
+              border-bottom: @standard-border;
+            }
+          }
+        }
+        .prod-col-2 {
+          order: 2;
+        }
+        .prod-col-3 {
+          order: 3;
+        }
+        .prod-col-4 {
+          order: 4;
+          ul {
+            li:last-of-type {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
