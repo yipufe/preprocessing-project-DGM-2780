@@ -282,8 +282,23 @@ html body section.main .action-bike .block .box-s6 .info-box-container .info-box
     display: none;
   }
 }
-html body section.main .action-bike .block .shrink-box {
+html body section.main .action-bike .block .box-s6 .shrink-box {
   width: 506px;
+}
+html body section.main .action-bike .block .box-s6 .shrink-box .btn-gray {
+  border: none;
+  background-color: rgba(37, 22, 1, 0.6);
+  display: block;
+  width: 100%;
+  margin: 8px 0px;
+  padding: 8px 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+html body section.main .action-bike .block .box-s6 .shrink-box .btn-gray:hover {
+  background-color: rgba(37, 22, 1, 0.8);
 }
 @media ( max-width: 1208px ) {
   html body section.main .action-bike .block {
@@ -703,6 +718,7 @@ html body section.main .feature-zone .block .feature .feature-right .btn-gray {
   text-align: left;
   font-weight: bold;
   color: #fff;
+  cursor: pointer;
 }
 html body section.main .feature-zone .block .feature .feature-right .btn-gray:hover {
   background-color: #444;
@@ -717,6 +733,7 @@ html body section.main .feature-zone .block .feature .feature-right .btn-blue {
   text-align: left;
   font-weight: bold;
   color: #fff;
+  cursor: pointer;
 }
 html body section.main .feature-zone .block .feature .feature-right .btn-blue:hover {
   background-color: #0582ba;
